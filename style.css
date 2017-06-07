@@ -25,13 +25,15 @@ body {
 
 .loginLink {
     position: absolute;
-    right: 19vw;
+    right: 50vw;
     font-size: 32px;
     text-decoration: none;
-    padding-top: 56px;
+    margin-top: 68px;
 }
 
 .ninjaButton {
     position: absolute;
-    right: 10vw;
+    right: 6vw;
+    margin-top: 68px;
+    font-size: xx-large;
 }
