@@ -1,15 +1,27 @@
 body {
     background: blue;
-}
-div { 
-    width: 20rem; 
-    border: solid 2px #acacac; padding: 2rem; 
-}
-
-img {
-    width: 30%;
+    margin: 0px;
 }
 
 .navArea {
-    
+    width: 100vw;
+    height: 0.5in;
+    background-color: white;
+    position: relative; /* makes anchor so we position things*/
+}
+
+.siteIcon {
+    height: 100%;
+    position: absolute;
+    left: 10vw;
+}
+
+.loginLink {
+    position: absolute;
+    right: 19vw;
+}
+
+.ninjaButton {
+    position: absolute;
+    right: 10vw;
 }
