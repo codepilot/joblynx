@@ -25,7 +25,9 @@ body {
 
 .loginLink {
     position: absolute;
-    right: 50vw;
+    --logwid: -300px;
+
+    right: calc(6vw - var(--logwid));
     font-size: 32px;
     text-decoration: none;
     margin-top: 68px;
