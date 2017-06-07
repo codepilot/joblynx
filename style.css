@@ -43,3 +43,7 @@ body {
     font-size: 32px;
     font-weight: bold;
 }
+
+button {
+        border-radius: 4px;
+}
