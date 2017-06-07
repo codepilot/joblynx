@@ -50,15 +50,16 @@ button {
 
 .bigPicture {
     width: 100vw;
-    height: 400px;
-    background-color: red;
+    height: 500px;
+    /* fixme better image */
+    background-image: url(http://www.miserv.net/large/www.itsevren.com/wp-content/uploads/2016/10/interesting-kitchen-curtains-ideas-with-nice-decoration-and-white-cabinetry.jpg);
 }
 
 .littlePane {
-    width: 500px;
-    height: 300px;
+    width: 550px;
+    height: 350px;
     background-color: green;
     margin: auto;
-    top: 50px;
+    top: 75px;
     position: relative;
 }
