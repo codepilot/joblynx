@@ -1,15 +1,14 @@
 body {
     background: blue;
-}
-div { 
-    width: 20rem; 
-    border: solid 2px #acacac; padding: 2rem; 
-}
-
-img {
-    width: 30%;
+    margin: 0px;
 }
 
 .navArea {
-    
+    width: 100vw;
+    height: 0.5in;
+    background-color: white;
+}
+
+.siteIcon {
+    height: 100%;
 }
