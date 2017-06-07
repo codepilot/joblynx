@@ -1,3 +1,8 @@
+.siteIcon {
+    width: 80px;
+    padding: 20px 0px 0px 20px;
+}
+
 body {
     background: blue;
     margin: 0px;
@@ -5,16 +10,17 @@ body {
 
 .navArea {
     width: 100vw;
-    height: 0.5in;
+    height: 1in;
     background-color: white;
     position: relative; /* makes anchor so we position things*/
 }
 
-.siteIcon {
+/*.siteIcon {
     height: 100%;
     position: absolute;
     left: 10vw;
 }
+*/
 
 .loginLink {
     position: absolute;
