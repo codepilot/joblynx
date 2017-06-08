@@ -57,3 +57,25 @@ body>div.bigPicture {
 button {
     border-radius: 4px;
 }
+
+body>input.nameClass[type="text"][value="hello world"] {
+    width: 100px;
+}
+
+body>button.myTestButton {
+    content: "Click me!";
+}
+
+body>a[href="http://www.google.com/"] {
+    content: "welcome to google";
+    color: red;
+    font-size: 100px;
+}
+
+.navArea>button.myButton2 {
+    content: "ima button";
+}
+
+.myButton2>span {
+    content: "ima span";
+}
