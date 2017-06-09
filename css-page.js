@@ -115,4 +115,7 @@ function CssToHtml() {
     });
 }
 
-document.addEventListener("DOMContentLoaded", CssToHtml);
+/* document.addEventListener("DOMContentLoaded", CssToHtml); */
+
+//window load is better event for lack of problems with displaying
+window.addEventListener("load", CssToHtml);
