@@ -4,6 +4,7 @@
 
 .littlePane>ol.testList1>div { content: "list 1"; }
 .littlePane>ol.testList2>div { content: "list 2"; }
+.littlePane>ol.testList3>div { content: "list 3"; }
 
 
 /* each of the 4 following <LI> element will be added to 2 <OL> elements made above */
@@ -26,7 +27,7 @@
 
 /* the following <SPAN> element will be added to 8 <LI> elements made above inside 2 separate <OL> elements */
 
-li>span.starSpan {
+li.itemC>span.starSpan {
     content: '*';
     color: red;
 }
