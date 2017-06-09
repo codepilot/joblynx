@@ -6,6 +6,7 @@
 .littlePane>ol.testList2>div { content: "list 2"; }
 
 
+/* each of the 4 following <LI> element will be added to 2 <OL> elements made above */
 .littlePane>ol>li.itemA {
     content: "itemA";
 }
@@ -21,6 +22,9 @@
 .littlePane>ol>li.itemD {
     content: "itemD";
 }
+
+
+/* the following <SPAN> element will be added to 8 <LI> elements made above inside 2 separate <OL> elements */
 
 li>span.starSpan {
     content: '*';
