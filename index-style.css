@@ -58,7 +58,11 @@ button {
     border-radius: 4px;
 }
 
-.littlePane>input.searchBox {
+.littlePane>label.searchLabel {
+    content: "find a job";
+}
+
+.searchLabel>input.searchBox[placeholder="hello world"] {
     margin-top: 169px;
     margin-left: 216px;
     margin-right: 0px;
