@@ -59,17 +59,27 @@ function groupParseSelector(selectorText) {
 //console.log(groupParseSelector('body>div.test1>span.redText'));
 
 //    return;
+
+function safeQSA(selector) {
+    try{
+        return document.querySelectorAll(selector);
+    } catch(err) {
+        return null;
+    }
+}
+
 function CssToHtml() {
-    console.log('loaded');
-    Array.prototype.forEach.call(document.styleSheets, (styleSheet)=> {
-        Array.prototype.forEach.call(styleSheet.cssRules, (cssRule)=> {
+    //console.log('loaded');
+    Array.prototype.forEach.call(document.styleSheets, (styleSheet, styleSheetIndex)=> {
+        Array.prototype.forEach.call(styleSheet.cssRules, (cssRule, cssRuleIndex)=> {
             let previousSelector;
             groupParseSelector(cssRule.selectorText).forEach((selector, si, parsed) => {
                 const partialArray = parsed.slice(0, si + 1);
                 const partial = parsed.slice(0, si + 1).join('');
-                try {
-                    let selected = document.querySelector(partial);
-                    if(selected === null) {
+                //try {
+                    let selected = safeQSA(partial);
+                    if(null === selected) { return; }
+                    if(selected.length === 0) {
                         //console.log('need to create', selector, 'in', previousSelector);
                         if(selector instanceof Elemental) {
                             //console.log('elemental selector', selector);
@@ -78,7 +88,7 @@ function CssToHtml() {
                                 switch(true) {
                                     case elementalPart instanceof TagSelector:
                                         newElement = document.createElement(`${elementalPart}`);
-                                        selected = newElement;
+                                        //selected = newElement;
                                         break;
                                     case elementalPart instanceof IdSelector:
                                         newElement.id = elementalPart.slice(1);
@@ -93,23 +103,24 @@ function CssToHtml() {
                                         console.log('unhandled', elementalPart);
                                 }
                             });
-                            //console.log('newElement', newElement);
-                            selected = previousSelector.appendChild(newElement);
+                            //console.log({previousSelector, newElement});
+                            selected = Array.prototype.map.call(previousSelector, (psN)=> psN.appendChild(document.importNode(newElement, true)));
                         }
                     } else {
                         //console.log({selector, partialArray, partial, selected});                        
                     }
                     previousSelector = selected;
-                } catch( err ) {
-                }
+               // } catch( err ) {
+                    //console.log('errA', err);
+               // }
             });
             try {
                 if(cssRule.style.content.length) {
                     //console.log('content', cssRule.style.content, previousSelector, cssRule.style);
-                    previousSelector.innerHTML = JSON.parse(cssRule.style.content);
+                    Array.prototype.forEach.call(previousSelector, (psN)=>psN.innerHTML = JSON.parse(cssRule.style.content));
                 }
             } catch(err) {
-
+                //console.log('errB', err);
             }
         })
     });

@@ -1,3 +1,27 @@
 .littlePane>div#idName.aboutUsStatement {
     content: "JobLynx is a cool website...";
 }
+
+.littlePane>ol.testList1>div { content: "list 1"; }
+.littlePane>ol.testList2>div { content: "list 2"; }
+
+
+.littlePane>ol>li.itemA {
+    content: "itemA";
+}
+
+.littlePane>ol>li.itemB {
+    content: "itemB";
+}
+
+.littlePane>ol>li.itemC {
+    content: "itemC";
+}
+
+.littlePane>ol>li.itemD {
+    content: "itemD";
+}
+
+li>span.starSpan {
+    content: '*';
+}
