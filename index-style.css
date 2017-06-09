@@ -43,7 +43,7 @@ body>div.bigPicture {
 .bigPicture>div.littlePane {
     width: 550px;
     height: 350px;
-    background-color: green;
+    background-color: white;
     margin: auto;
     top: 75px;
     position: relative;
