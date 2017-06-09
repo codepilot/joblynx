@@ -58,13 +58,22 @@ button {
     border-radius: 4px;
 }
 
-.littlePane>label.searchLabel {
+.littlePane>div.searchOutline {
+    background: white;
+    border-radius: 4px;
+    position: relative;
+    top: 100px;
+    left: 60px;
+    /* since we have left margin 60 px we want width to be equidistance to to left/right we add 60px both sides and substr from parent 100% width of green box*/
+    width: calc(100% - 120px);
+}
+
+.searchOutline>label.searchLabel {
     content: "find a job";
+
 }
 
 .searchLabel>input.searchBox[placeholder="hello world"] {
-    margin-top: 169px;
-    margin-left: 216px;
     margin-right: 0px;
     margin-bottom: auto;
 }
