@@ -58,6 +58,17 @@ button {
     border-radius: 4px;
 }
 
-.navArea>a[href="contact.html"] {
-    content: "Contact us";
+
+.navArea>a[href="index.html"] {
+    content: " Home ";
 }
+
+.navArea>a[href="contact.html"] {
+    content: " Contact us ";
+}
+
+
+.navArea>a[href="about-us.html"] {
+    content: " About Us ";
+}
+
