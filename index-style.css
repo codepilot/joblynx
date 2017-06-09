@@ -59,7 +59,7 @@ button {
 }
 
 
-.navArea>a[href="index.html"] {
+.navArea>a[href="./"] {
     content: " Home ";
 }
 
