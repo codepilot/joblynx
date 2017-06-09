@@ -1,0 +1,59 @@
+body {
+    margin: 0px;
+}
+
+body>nav.navArea {
+    width: 100vw;
+    height: 1.75in;
+    background-color: white;
+    position: relative; /* makes anchor so we position things*/
+}
+
+.navArea>img.siteIcon[src="https://564d730490b765c79447-0277ff7b358121d59c7b15f3558e9da3.ssl.cf1.rackcdn.com/lynx.png"][alt="cat"] {
+    width: 80px;
+    padding-top: 30px;
+    padding-left: 35px;    
+}
+
+.navArea>button.loginLink {
+    content: "Login";
+    position: absolute;
+    --logwid: -300px;
+    right: calc(6vw - var(--logwid));
+    font-size: 32px;
+    text-decoration: none;
+    margin-top: 68px;
+}
+
+.navArea>button.ninjaButton {
+    content: "Become a Job<span>C</span>at";
+    position: absolute;
+    right: 6vw;
+    margin-top: 68px;
+    font-size: xx-large;
+}
+
+body>div.bigPicture {
+    width: 100vw;
+    height: 500px;
+    /* fixme better image */
+    background-image: url(http://www.miserv.net/large/www.itsevren.com/wp-content/uploads/2016/10/interesting-kitchen-curtains-ideas-with-nice-decoration-and-white-cabinetry.jpg);
+}
+
+.bigPicture>div.littlePane {
+    width: 550px;
+    height: 350px;
+    background-color: green;
+    margin: auto;
+    top: 75px;
+    position: relative;
+}
+
+.ninjaButton>span {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+button {
+    border-radius: 4px;
+}
