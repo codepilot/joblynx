@@ -80,6 +80,9 @@ function CssToHtml() {
                                         newElement = document.createElement(`${elementalPart}`);
                                         selected = newElement;
                                         break;
+                                    case elementalPart instanceof IdSelector:
+                                        newElement.id = elementalPart.slice(1);
+                                        break;                                    
                                     case elementalPart instanceof ClassSelector:
                                         newElement.classList.add(elementalPart.slice(1));
                                         break;
