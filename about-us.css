@@ -28,4 +28,5 @@
 
 li>span.starSpan {
     content: '*';
+    color: red;
 }
