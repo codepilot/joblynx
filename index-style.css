@@ -59,5 +59,8 @@ button {
 }
 
 .littlePane>input.searchBox {
-
+    margin-top: 169px;
+    margin-left: 216px;
+    margin-right: 0px;
+    margin-bottom: auto;
 }
