@@ -1,14 +1,14 @@
 <!-- we have links here therefore open terminal > python -m SimpleHTTPServer 8000 to view https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-yhiyLSLMQGPDg7RkvJJ8UV9CBKPscacAHym5PFUyc2QvaMR4dQ-->
 <!-- https://www.whitehouse.gov/1600/presidents/abrahamlincoln https://codepen.io/freeCodeCamp/full/NNvBQW https://codepen.io/heggy231/pen/RgrRJo-->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>All About Abraham Lincoln</title>
+    <title>[Specification Documentation fo Tribute Page]</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="styleMe.css">
+    <link rel="icon" type="image/gif" href="https://cdn.glitch.com/57bc3237-9d5f-442e-88f6-04e92041b5f7%2FpikaRun.gif?1497030320530">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
@@ -19,17 +19,18 @@
     crossorigin="anonymous">
     </script>
 <!-- execute jQuery function to call header and footer onloading of page-->    
+
     <script> 
         $(function(){
             $("#header").load("header.html"); 
             $("#footer").load("footer.html"); 
         });
     </script> 
+
 </head>
+
 <body>
-
-
-<div class="container">
+  <div class="container">
     <div class="jumbotron">
         <div id="header"></div>
 
@@ -61,7 +62,7 @@
 
                 </div>
             </div>
-            <div class = "caption text-center">I am text here </div>
+            <div class = "caption text-center">Little known fact: The Sucess of Abraham Lincoln was a big suprise at the time of his election.</div>
             </div>
 
             <!-- Left and right controls -->
@@ -77,13 +78,68 @@
 
 <!-- look at offset col grid system-->
 
-        <h2>Basic List Group</h2>
+        <h2>Five Fun Facts About Pres. Lincoln</h2>
         <ul class="list-group">
-            <li class="list-group-item">First item</li>
-            <li class="list-group-item">Second item</li>
-            <li class="list-group-item">Third item</li>
+            <li class="list-group-item">Lincoln supported <strong>women’s rights</strong></li>
+            <li class="list-group-item">Lincoln was a licensed <strong>bartender!</strong></li>
+            <li class="list-group-item">First president to sport a <strong>beard</strong></li>
+            <li class="list-group-item">Lincoln fought in the <strong>War</strong></li>
+            <li class="list-group-item">Only president to have a <strong>patent</strong></li>
         </ul>
 
+        <div class="panel-group" id="accordion">
+
+            <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Lincoln's Famous Quote 1</a>
+                </h4>
+            </div>
+            <div id="collapse1" class="panel-collapse collapse in">
+                <div class="panel-body">
+                    <blockquote><p>"The dogmas of the quiet past are inadequate to the stormy present"</p>
+                    <footer><cite>Speech Technique used: contrast and balance</cite></footer>
+                    </blockquote>
+                </div>
+            </div>            
+            </div>
+
+            <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Lincoln's Famous Quote 2</a>
+                </h4>
+            </div>
+            <div id="collapse2" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <blockquote><p>"Fondly do we hope—fervently do we pray"</p>
+                    <footer><cite>Speech Technique used: alliteration</cite></footer>
+                    </blockquote>
+                </div>
+            </div>
+            </div>
+
+            <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Lincoln's Famous Quote 3</a>
+                </h4>
+            </div>
+            <div id="collapse3" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <blockquote><p>"We cannot dedicate, we cannot consecrate, we cannot hallow this ground"</p>
+                    <footer><cite>Speech Technique used: repetition</cite></footer>
+                    </blockquote>
+                </div>
+            </div>
+            </div>
+
+        </div> 
+        <p class = "text-center">
+            <mark>Please   
+            <a href="http://www.smithsonianmag.com/history/ted-sorensen-on-abraham-lincoln-a-man-of-his-words-12048177/#7M9GMioZcCugCidQ.99" class="btn btn-info" role="button">click</a> to read more about President Lincoln.
+            </mark>
+        </p>
     </div>
 </div>
 <div id="footer"></div>

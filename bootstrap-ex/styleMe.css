@@ -24,3 +24,8 @@ footer {
 .jumbotron {
     padding-top: 0px;
 }
+
+.btn-info {
+    background-color: #607d8b;
+    border-color: #607d8b;
+}
