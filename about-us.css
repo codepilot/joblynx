@@ -31,3 +31,9 @@ li.itemC>span.starSpan {
     content: '*';
     color: red;
 }
+
+.bottomFooter>button.bottomButton {
+    content: "Sign up for a news letter";
+    font-weight: bold;
+    color: green;
+}

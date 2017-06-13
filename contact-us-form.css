@@ -1,0 +1,34 @@
+.littlePane>form#ContactForm>div.formDiv {
+    content: "Contact Us...";
+}
+
+.formDiv>label.labFirstName {
+    content: "First name: ";
+}
+
+.formDiv>label.labLastName {
+    content: "Last name: ";
+}
+
+.formDiv>label.labPhone {
+    content: "Firstname: ";
+}
+
+.labFirstName>input[type="text"][name="firstName"][placeholder="Enter First Name Here"] {
+    
+}
+
+.labLastName>input[type="text"][name="lastName"][placeholder="Enter Last Name Here"] {
+    
+}
+
+.labPhone>input[type="tel"][name="phoneNumber"][placeholder="Enter Telephone Number Here"] {
+    
+}
+
+.formDiv>input[type="submit"][value="Contact Us"] {
+}
+
+label {
+    display: block;
+}
